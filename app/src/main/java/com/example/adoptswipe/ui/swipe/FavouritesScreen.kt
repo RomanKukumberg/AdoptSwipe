@@ -33,6 +33,7 @@ fun FavouritesScreen(
                         Spacer(Modifier.height(4.dp))
                         Text(animal.name, style = MaterialTheme.typography.titleMedium)
                         Text(animal.breed)
+                        Text(animal.contact)
                         Spacer(Modifier.height(4.dp))
                         Button(onClick = { viewModel.removeFromFavourites(animal) }) {
                             Text("🗑️ Delete")

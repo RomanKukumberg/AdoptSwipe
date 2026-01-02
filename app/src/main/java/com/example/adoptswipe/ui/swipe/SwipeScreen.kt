@@ -90,6 +90,7 @@ fun SwipeScreen(
                             Text(animal.name, style = MaterialTheme.typography.headlineSmall)
                             Text(animal.breed, style = MaterialTheme.typography.bodyMedium)
                             Text(animal.description, style = MaterialTheme.typography.bodySmall)
+                            Text(animal.contact, style = MaterialTheme.typography.bodySmall)
                             Spacer(Modifier.height(8.dp))
 
                             // ❤️ tlačidlo iba ak mačka ešte nie je vo favourites

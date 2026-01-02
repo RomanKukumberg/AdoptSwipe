@@ -11,5 +11,6 @@ data class Animal(
     val age: String,
     val breed: String,
     val imageRes: Int,
-    val description: String
+    val description: String,
+    val contact: String
 )

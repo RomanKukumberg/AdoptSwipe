@@ -31,7 +31,8 @@ class AnimalViewModel(
             age = "1 year",
             breed = "Domestic Short Hair",
             imageRes = R.drawable.mackaks1,
-            description = "Playful kitty who loves cuddles and scratches 😸"
+            description = "Playful kitty who loves cuddles and scratches 😸",
+            contact = "adoptme@now.com"
         ),
         Animal(
             id = 2,
@@ -39,7 +40,8 @@ class AnimalViewModel(
             age = "2 years",
             breed = "Siamese",
             imageRes = R.drawable.mackasiam2,
-            description = "Lili is gentle and calm, perfect for families with children."
+            description = "Lili is gentle and calm, perfect for families with children.",
+            contact = "adoptme@now.com"
         ),
         Animal(
             id = 3,
@@ -47,7 +49,8 @@ class AnimalViewModel(
             age = "3 years",
             breed = "Persian",
             imageRes = R.drawable.mackapers3,
-            description = "Oscar is elegant and enjoys sleeping in cozy places."
+            description = "Oscar is elegant and enjoys sleeping in cozy places.",
+            contact = "adoptme@now.com"
         )
     )
 
