@@ -34,12 +34,18 @@ fun SwipeScreen(
 
     Column(
         modifier = Modifier.fillMaxSize(),
-        verticalArrangement = Arrangement.SpaceBetween
+        verticalArrangement = Arrangement.SpaceBetween,
+        horizontalAlignment = Alignment.CenterHorizontally
     ) {
         // Hlavná časť - karta
-        Box(modifier = Modifier.weight(1f), contentAlignment = Alignment.Center) {
+        Box(
+            modifier = Modifier
+                .weight(1f)
+                .fillMaxWidth(),
+            contentAlignment = Alignment.Center
+        ) {
             if (animals.isEmpty()) {
-                Text("Žiadne mačky 😿", style = MaterialTheme.typography.headlineMedium)
+                Text("No cats 😿", style = MaterialTheme.typography.headlineMedium)
             } else {
                 // Ak sme na konci, začneme od začiatku
                 if (currentIndex >= animals.size) currentIndex = 0
@@ -108,7 +114,7 @@ fun SwipeScreen(
             }
         }
 
-        // Fixný BottomNavigation na spodku
+        // Fixný spodný navigačný bar
         BottomNavigationBar(currentScreen = "swipe", onNavigate = onNavigate)
     }
 }
